@@ -1,0 +1,168 @@
+body {
+  font-family: Arial, sans-serif; 
+  margin: 0; 
+  padding: 0; 
+  background:  #63a0f7; 
+  color: #fff; 
+}
+
+/* Header Styles */
+header {
+  background-color: #282c34; 
+  padding: 10px 0;
+  position: sticky; 
+  top: 0; 
+  z-index: 100; 
+  height: 100px;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  position: relative; 
+}
+
+/* Navbar Styles */
+.nav {
+  display: flex; 
+  justify-content: center; 
+  flex-grow: 1; 
+}
+
+.nav ul {
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; 
+  align-items: center; 
+}
+
+.nav ul li {
+  margin: 0 15px; 
+}
+
+img {
+  border-radius: 50%; 
+  position: absolute; 
+  left: 15px; 
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for vertical center alignment */
+}
+a img:hover {
+  opacity: 0.3;
+}
+
+.nav ul li a {
+  color: #ffffff; 
+  text-decoration: none; 
+  font-weight: bold; 
+}
+
+.nav ul li a:hover {
+  opacity: 0.3;
+}
+
+/* Main Area Styles */
+main {
+  padding: 20px; 
+  max-width: 600px; 
+  margin: auto; 
+  position: relative; /* Allow positioning of child elements */
+  overflow: hidden; /* Hide content that overflows */
+  
+}
+
+
+h2 {
+  text-align: center; 
+}
+
+/* Input Styles */
+.input-style {
+  display: block; 
+  width: calc(100% - 20px); /* Full width minus padding */
+  padding: 10px; 
+  margin: 10px auto; 
+  border: none; 
+  border-radius: 5px; 
+  font-size: 16px; 
+}
+
+/* Buttons Style */
+.buttons {
+  text-align: center; 
+}
+
+
+.buttons button {
+  background-color: #61dafb; 
+  color: #fff; 
+  border: none; 
+  border-radius: 5px;
+  padding: 10px 20px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  margin: 10px; 
+}
+
+
+.buttons button:disabled {
+  background-color: #ccc; 
+ 
+}
+
+/* Footer Styles */
+footer {
+  background-color: #282c34; 
+  color: #fff; 
+  text-align: center; 
+  padding: 20px; 
+}
+#fontStyle {
+background-color: #000102;
+color: #fff;
+cursor: pointer;
+right: 5px;
+}
+#colorInput{
+cursor: pointer;
+background-color: #61dafb;
+right: 10px;
+
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+      
+  .nav ul {
+    
+    width: 45%;
+  }
+  .input-style {
+   
+    width: 45%;
+}
+.buttons button {
+  flex-flow: row wrap;
+  width: 45%;
+}
+
+}
+
+
+
+@media screen and (max-width: 480px) {
+  
+
+  .nav ul {
+    flex-flow: row wrap;
+    max-width: 100%;
+  }
+  .input-style{
+    flex-direction: column;
+    max-width: 100%;
+}
+.buttons button {
+  flex-direction: column;
+  max-width: 100%;
+}
+ 
+  
+}

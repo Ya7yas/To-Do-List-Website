@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Contact, Form, User Information, Web Design, JavaScript, HTML, CSS"> 
+  <title>Wave</title>
+  <!-- <link rel="stylesheet" href="Home.css">  -->
+  <link rel="stylesheet" href="Home.css">
+
+</head>
+<body id="body">
+  <!-- Header section -->
+  <header>
+    <div class="nav">
+      <a href="Home.html"><img src="1.png" alt="Logo" width="70px"></a>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="todoList.html">To Do List</a></li>
+        <li><a href="calculator.html">Calculator</a></li>
+        <li><label><input type="color" id="colorInput"/> Mood </label></li>
+        <select name="fontFamily" id="fontStyle">
+            <option> Font Style </option>
+            <option value="font1">Courier New</option>
+            <option value="font2">Franklin Gothic </option>
+            <option value="font3">Gill Sans</option>
+            <option value="font4">Lucida Sans</option>
+        </select> 
+      </ul>
+    </div>
+  </header>
+
+  <!-- Main content section -->
+  <main id="contact">
+    <form id="contactForm">
+        <h2>Contact Us</h2>
+        <div class="inputs">
+          <label for="userName">User Name:</label>
+          <input type="text" class="input-style" id="userName" required>
+          <label for="email">Email:</label>
+          <input type="email" class="input-style" id="email" required>
+          <label for="dob">Date Of Birth:</label>
+          <input type="date" class="input-style" id="dob" required>
+          <label for="phoneNumber">Phone:</label>
+          <input type="tel" class="input-style" id="phoneNumber"  required>
+          <label for="password">Password:</label>
+          <input type="password" class="input-style" id="password" minlength="8" maxlength="16" required>
+          <input type="checkbox" class="checkbox-style" id="agreement">
+          <label for="agreement">Agree to Terms</label>
+        </div>
+        <div class="buttons">
+          <button type="button" id="saveToLocalStorage" >Save to Local Storage</button>
+          <button type="button" id="saveToSessionStorage" >Save to Session Storage</button>
+          <button type="reset" id="clearForm">Clear Form</button>
+        </div>
+    </form>
+  </main>
+
+  <!-- Footer section -->
+  <footer id="footer">
+    <h2>&copy; All copyrights reserved</h2>
+  </footer>
+
+  <script src="Home.js"></script>
+  <script src="all.js"></script>
+</body>
+</html>

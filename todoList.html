@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Contact, Form, User Information, Web Design, JavaScript, HTML, CSS"> <!-- Meta keywords for SEO -->
+  <title>Wave</title>
+    <link rel="stylesheet" href="todoList.css">
+</head>
+<body onload="onload()" id="body">
+    <!-- Header Section -->
+    <header>
+        <div class="nav">
+            <!-- NavBar List -->
+            <ul>
+                <li><a href="Home.html"><img src="1.png" alt="Logo" width="70px"></a></li>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="todoList.html">To Do List</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+                <!-- Color Mood -->
+                <li><label><input type="color" id="colorInput"/> Mood </label></li>
+                <!--Font Style  -->
+                    <select name="fontFamily" id="fontStyle">
+                        <option> Font Style </option>
+                      <option value="font1">Courier New</option>
+                      <option value="font2">Franklin Gothic </option>
+                      <option value="font3">Gill Sans</option>
+                      <option value="font4">Lucida Sans</option>
+                    </select> 
+                  
+            </ul>
+        </div>
+    </header>
+    <section>
+        <!-- Container To Text Area And Task Buttons  -->
+        <div id="addTask">
+            <textarea name="taskDesciption" value="" id="taskDesciption" placeholder="Write here your task "></textarea>
+            <button id="addBtn" value="10" >Add Task</button>
+            <button id="clearBtn">Delete All Tasks</button>
+        </div>
+        <div id="container" style="visibility: hidden;">
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer id="footer">
+        <h2>&copy; All copyrights reserved</h2>
+        
+       
+      </footer>
+    <script src="todoList.js"></script>
+    <script src="all.js"></script>
+</body>
+</html>

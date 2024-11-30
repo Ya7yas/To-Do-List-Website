@@ -1,0 +1,163 @@
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background:  #63a0f7;
+    color: #fff;
+}
+
+/* Header styles */
+header {
+    position: fixed;
+    background-color: #282c34;
+    padding: 10px 0;
+    top: 0;
+    width: 101%;
+    height: 70px;
+    border-radius: 5px;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    z-index: 100; /* Ensure header stays above other content */
+}
+
+/* Navigation menu styles */
+.nav {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the navbar */
+    flex-grow: 1; /* Allow navbar to take up remaining space */
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.nav ul li {
+    margin: 0 15px; /* Add horizontal margin between items */
+}
+
+.nav ul li img {
+    vertical-align: middle;
+    border-radius: 50%;
+    position: absolute; /* Absolute positioning within header */
+    left: 15px; /* Distance from the left edge */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for vertical center alignment */
+}
+
+.nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav ul li a:hover {
+    opacity: 0.3;
+}
+   
+/* Main container styles */
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+/* Add task section styles */
+#addTask {
+    display: flex;
+    align-content: space-evenly;
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 100px;
+    background-color: #282c34;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#addTask button {
+    background-color: #282c34;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Task item styles */
+.taskDiv {
+    display: flex;
+    width: 100%;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.taskDiv p {
+    margin-left: 10px;
+    color: #282c34;
+    width: 90%;
+}
+
+.taskDiv button {
+    margin-right: 25px;
+    width: 110px;
+    background-color: #282c34;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Task description textarea styles */
+#taskDesciption {
+    width: 300px;
+    height: 50px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+
+/* Margin for textarea and button in add task section */
+#addTask textarea, button {
+    margin: 5px;
+}
+
+/* Footer styles */
+footer {
+    position: fixed;
+    background-color: #282c34;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Font Family Styles */
+#fontStyle {
+    background-color: #000102;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Color input */
+#colorInput {
+    cursor: pointer;
+    background-color: #61dafb;
+}
